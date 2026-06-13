@@ -12,7 +12,12 @@ class Expense {
     }
  }
 
-addExpense(expense) {
+class ExpenseTracker {
+  constructor(expenses = []) {
+    this.expenses = expenses;
+  }
+
+  addExpense(expense) {
     this.expenses = [...this.expenses, expense];
     return this.expenses;
   }
@@ -21,10 +26,14 @@ addExpense(expense) {
     this.expenses = [...this.expenses, ...expenses];
     return this.expenses;
   }
- removeExpense(id) {
-    this.expenses = this.expenses.filter(expense => expense.id !== id);
+
+  removeExpense(id) {
+    this.expenses = this.expenses.filter(
+      expense => expense.id !== id
+    );
     return this.expenses;
   }
+}
 
  getTotalExpenses() {
     return this.expenses.reduce((total, { amount }) => total + amount, 0);
