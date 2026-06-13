@@ -16,3 +16,8 @@ addExpense(expense) {
     this.expenses = [...this.expenses, ...expenses];
     return this.expenses;
   }
+ removeExpense(id) {
+    this.expenses = this.expenses.filter(expense => expense.id !== id);
+    return this.expenses;
+  }
+
