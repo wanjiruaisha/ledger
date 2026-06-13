@@ -7,3 +7,12 @@ class Expense {
   }
 }
 
+addExpense(expense) {
+    this.expenses = [...this.expenses, expense];
+    return this.expenses;
+  }
+
+  addMultipleExpenses(...expenses) {
+    this.expenses = [...this.expenses, ...expenses];
+    return this.expenses;
+  }
