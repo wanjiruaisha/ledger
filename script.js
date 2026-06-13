@@ -6,11 +6,7 @@ class Expense {
     this.category = category;
   }
 }
- class ExpenseTracker {
-    constructor(expenses = []){
-        this.expenses = expenses;
-    }
- }
+ 
 
 class ExpenseTracker {
   constructor(expenses = []) {
