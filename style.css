@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #111827, #4f46e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #111827;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  color: #3730a3;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+form button {
+  grid-column: 1 / -1;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #4f46e5;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #3730a3;
+  transform: translateY(-2px);
+}
+
+#filterCategory {
+  width: 100%;
+  margin-bottom: 20px;
+  background: #f9fafb;
+}
+
+#expenseList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#expenseList li {
+  background: #f3f4f6;
+  padding: 14px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-left: 5px solid #4f46e5;
+}
+
+#expenseList li span {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#expenseList li button {
+  background: #ef4444;
+  padding: 9px 12px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+#expenseList li button:hover {
+  background: #b91c1c;
+}
+
+#total {
+  margin-top: 24px;
+  text-align: center;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 1.4rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
+/* Phone */
+@media (max-width: 500px) {
+  body {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  #expenseList li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #expenseList li button {
+    width: 100%;
+  }
+
+  #total {
+    font-size: 1.2rem;
+  }
+}
