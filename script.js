@@ -29,14 +29,20 @@ class ExpenseTracker {
     );
     return this.expenses;
   }
-}
 
- getTotalExpenses() {
-    return this.expenses.reduce((total, { amount }) => total + amount, 0);
+  getTotalExpenses() {
+    return this.expenses.reduce(
+      (total, { amount }) => total + amount,
+      0
+    );
   }
-filterByCategory(category) {
+
+  filterByCategory(category) {
     if (category === "All") return this.expenses;
-    return this.expenses.filter(expense => expense.category === category);
+
+    return this.expenses.filter(
+      expense => expense.category === category
+    );
   }
 }
 // LocalStorage
