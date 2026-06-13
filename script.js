@@ -21,3 +21,6 @@ addExpense(expense) {
     return this.expenses;
   }
 
+ getTotalExpenses() {
+    return this.expenses.reduce((total, { amount }) => total + amount, 0);
+  }
