@@ -29,3 +29,11 @@ filterByCategory(category) {
     return this.expenses.filter(expense => expense.category === category);
   }
 }
+// LocalStorage
+function saveExpenses(expenses) {
+  localStorage.setItem("expenses", JSON.stringify(expenses));
+}
+
+function loadExpenses() {
+  return JSON.parse(localStorage.getItem("expenses")) || [];
+}
