@@ -1,8 +1,8 @@
-# Expense Tracker
+# ledger-Expense Tracker
 
 ## Overview
 
-Expense Tracker is a JavaScript-based web application that helps users record, organize, and monitor their daily expenses. Users can add expenses, categorize spending, filter records by category, calculate total spending, and store their data using local storage for persistence.
+Ledger is a JavaScript-based web application that helps users record, organize, and monitor their daily expenses. Users can add expenses, categorize spending, filter records by category, calculate total spending, and store their data using local storage for persistence.
 
 This project demonstrates the use of Object-Oriented Programming (OOP), functional programming concepts, destructuring, the spread and rest operators, local storage, and unit testing with Jest.
 
