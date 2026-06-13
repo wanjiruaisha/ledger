@@ -4,7 +4,7 @@
   "description": "Ledger is a JavaScript-based web application that helps users record, organize, and monitor their daily expenses. Users can add expenses, categorize spending, filter records by category, calculate total spending, and store their data using local storage for persistence.",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/wanjiruaisha/ledger/issues"
   },
-  "homepage": "https://github.com/wanjiruaisha/ledger#readme"
+  "homepage": "https://github.com/wanjiruaisha/ledger#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
 }
